@@ -3,7 +3,7 @@ set -e
 echo ""
 
 echo -e "Building docker image..."
-docker build -t  ghostroot/k8-demo-app
+docker build -t  ghostroot/k8-demo-app .
 echo ""
 echo -e "Pushing image to docker hub repo"
 docker push ghostroot/k8-demo-app
